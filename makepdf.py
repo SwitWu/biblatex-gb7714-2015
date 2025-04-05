@@ -88,7 +88,7 @@ def compileall(task='all'): #'all','compare'
                             if os.path.exists(fileaux):
                                 os.remove(fileaux)
                         #latex编译
-                        latexcmd="xelatex"
+                        latexcmd="lualatex"
                         if dirname =="example" and re.match("code",file):
                             latexcmd="pdflatex"
                         if dirname !="tool":
